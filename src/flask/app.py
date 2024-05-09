@@ -1253,7 +1253,7 @@ class Flask(App):
                     rv = self.ensure_sync(before_func)()
 
                     if rv is not None:
-                        return rv  # type: ignore[no-any-return]
+                        return None  # type: ignore[no-any-return]
 
         return None
 
